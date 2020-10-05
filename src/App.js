@@ -13,7 +13,7 @@ import Header from './components/Header/Header';
 import Register from './components/Register/Register';
 import Dashboard from './components/Dashboard/Dashboard';
 import Admin from './components/Admin/Admin';
-import AddEvent from './components/AddEvent/AddEvent';
+
 export const UserContext = createContext();
 
 function App() {
