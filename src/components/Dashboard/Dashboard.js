@@ -1,12 +1,13 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { Button, Col, Container, Row } from 'react-bootstrap';
+import { useHistory } from 'react-router-dom';
 import { UserContext } from '../../App';
 import coverImg from '../../images/extraVolunteer.png'
 import './Dashboard.css'
 const Dashboard = () => {
     const [bookings, setBookings] =useState([]);
     const [loggedInUser,setLoggedInUser] = useContext(UserContext);
-
+    const history = useHistory();
 
     useEffect(() =>{
         fetch('http://localhost:5000/bookings?email='+loggedInUser.email,{
@@ -28,6 +29,7 @@ const Dashboard = () => {
                     console.log(result);
                 }
             })
+            history.push('/dashboard')
     }
     return (
         <Container>
@@ -38,7 +40,7 @@ const Dashboard = () => {
                             <img src={coverImg} alt="" className="img-control"/>
                         </Col>
                         <Col md={6}>
-                        <h4>{book.name} </h4>
+                        <h4>{book.worktitle} </h4>
                         <p>{new Date(book.checkIn).toDateString('dd/MM/yyyy')}</p>
                         {/* delete */}
                         <Button onClick={() =>deleteProduct(`${book._id}`)}>Cancel</Button>

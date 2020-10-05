@@ -65,7 +65,7 @@ const Register = () => {
                         }}
                     />
                 </Grid>
-                {/* <Button  variant="contained" color="primary">Book Now</Button> */}
+               
             
                     <br/>
                     <Form.Control type="text" placeholder="task " value={worktitle} />

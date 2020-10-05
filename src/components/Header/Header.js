@@ -18,7 +18,7 @@ const Header = () => {
                     <Nav.Link href="#features">
                     <Link to='/dashboard' style={{textDecoration: 'none',color:'gray'}}>Dashboard</Link>
                     </Nav.Link>
-                    <Nav.Link href="#pricing">Pricing</Nav.Link>
+                   
                 </Nav>
                 <Form inline>
                     <FormControl type="text" placeholder="Search" className="mr-sm-2" />
