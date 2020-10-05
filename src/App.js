@@ -36,9 +36,7 @@ function App() {
         <Route path="/admin">
           <Admin></Admin>
         </Route>
-        <PrivateRoute path="/addevent">
-         <AddEvent></AddEvent>
-        </PrivateRoute>
+        
         <PrivateRoute path="/register/:worktitle">
           <Register></Register>
         </PrivateRoute>
