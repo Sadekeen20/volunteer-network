@@ -26,7 +26,7 @@ const Register = () => {
         const description=document.getElementById('description').value;
         const newBooking = {...loggedInUser, ...selectedDate,worktitle,description};
         
-        fetch('http://localhost:5000/addBooking', {
+        fetch('https://evening-everglades-15711.herokuapp.com/addBooking', {
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify(newBooking)
