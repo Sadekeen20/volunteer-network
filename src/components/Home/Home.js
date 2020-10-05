@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button, Card, Col, Container, FormControl, Row } from 'react-bootstrap';
 import { Link, useHistory } from 'react-router-dom';
-import cardImg from '../../images/animalShelter.png'
+
 const Home = () => {
     const history = useHistory();
     const handleItem = (title) => {
