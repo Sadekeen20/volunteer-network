@@ -1,0 +1,11 @@
+.img-control{
+    height:100px;
+}
+.card-style{
+    margin-top:15px;
+    margin-bottom:15px;
+    padding:10px;
+    border: 1px solid gray;
+    border-radius:10px;
+    background-color: #FFFFFE;
+}

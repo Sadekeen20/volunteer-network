@@ -1,0 +1,7 @@
+.container-style{
+    margin:250px;
+    border: 1px solid gray; 
+    height: 300px;
+    padding: 60px;
+    border-radius:15px;
+}
